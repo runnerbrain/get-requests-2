@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="float-grid.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Github repos search tool</title>
+</head>
+
+<body>
+    <header class="banner">
+        Github Repos search tool
+    </header>
+
+    <main>
+        <section role="region" class="">
+            <form id="github_repos">
+                <div class="row">
+                    <div class="col-3">
+                        <label for="githubHandle">User handle</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" name="githubHandle" id="githubHandle" placeholder="user handle" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12"><button class="button">Fetch</button></div>
+                </div>
+            </form>
+        </section>
+        <hr style="width: 1000px;text-align: center">
+        <section role="region" class="repos_list_area hidden">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <h2>Repos lists</h2>
+                    <ul class="repos_list"></ul>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
